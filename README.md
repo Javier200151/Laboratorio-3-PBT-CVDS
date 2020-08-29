@@ -1,3 +1,10 @@
+#LAB03 PBT-CVDS
+En este repositorio se realizó el laboratorio que incluye los ejercicios 
+- **Registraduría**: En este se incluye el servicio de la registradiría que permitirá registrar personas que sean votantes. \
+de este ejercicio se incluyen pruebas JUnit
+- **Descuento de tarifas**: En este se incluyó una libreria llamada *aerodescuentos.jar* al repositorio local de maven \
+de este ejercicio se incluyen pruebas JUnit
+
 ##Clases de equivalencia
 
 1. Dead:Se debe validar que este parametro sea false,
@@ -12,3 +19,4 @@ el valor maximo de la edad pueda ser menor o igual a 122
 
 5. Duplicated:Se debe validar que en un arreglo de personas si la persona a añadir
 ya existe no pueda ser añadida
+
