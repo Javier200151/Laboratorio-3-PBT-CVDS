@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.eci.cvds.tdd.registry.RegistryTest" time="0.009" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0.074" tests="33" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,9 +60,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="validateRegistryUnderAge" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
-  <testcase name="validateRegistryDuplicated" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
-  <testcase name="validateRegistryDead" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
-  <testcase name="validateRegistryResult" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
-  <testcase name="validateRegistryValidAge" classname="edu.eci.cvds.tdd.registry.RegistryTest" time="0"/>
+  <testcase name="pruebaFronteraTarifa1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0.008"/>
+  <testcase name="pruebaFronteraTarifa2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaDiasAntelacion1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaDiasAntelacion2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaDiasAntelacion3" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaDiasAntelacion4" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion3" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion4" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion5" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion6" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion7" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraDiasAntelacion8" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad3" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad4" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad5" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad6" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad7" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad8" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad9" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad10" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad11" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaFronteraEdad12" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebaTarifa1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0.001"/>
+  <testcase name="pruebaTarifa2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0.001"/>
+  <testcase name="pruebasEdad1" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebasEdad2" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebasEdad3" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebasEdad4" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
+  <testcase name="pruebasEdad5" classname="edu.eci.cvds.tdd.aerodescuentos.TarifasTest" time="0"/>
 </testsuite>
