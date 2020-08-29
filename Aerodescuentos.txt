@@ -1,0 +1,93 @@
+1. De acuerdo con lo indicado, y teniendo en cuenta que NO hay precondiciones, en qué casos se debería
+arrojar una excepción de tipo ExcepcionParametrosInvalidos?. Agregue esto a la especificación.
+
+	- La excepción se lanzaria si  algun dato ingresado es negativo.
+	- Para la edad si se pasa del rango de 110 se lanzaría.
+	- El  numero de dias de antelacion no puede tener mas de 5 digitos.
+
+2. En la siguiente tabla enumere un conjunto de clases de equivalencia que -según usted- creen una
+buena división del conjunto de datos de entrada de la función anterior:
+
+	-Edad:
+		-edad < 0			Incorrecto
+		-edad > 0 && edad <=18		Correcto
+		-edad > 18 && edad <= 65	Correcto
+		-edad > 65 && edad <=110	Correcto
+		-edad > 110			Incorrecto
+	
+	-Tarifa base:
+
+		-tarifaBase < 0			Incorrecto
+		-tarifaBase > 0			Correcto
+	
+	-Dias antelación:
+
+		-dias < 0			Incorrecto
+		-dias > 20 < 9999		Correcto
+		-dias > 9999			Incorrecto
+
+3. Para cada clase de equivalencia, defina un caso de prueba específico, definiendo: parámetros de
+entrada y resultados esperados.
+
+	-Edad:
+		-edad < 0			Entrada: tarifa base : 1000, Dias antelación: 6, Edad: -45; Salida: Valor Invalido
+		-edad > 0 && edad <=18		Entrada: tarifa base : 1000, Dias antelación: 7, Edad: 15; Salida: 950
+		-edad > 18 && edad <= 65	Entrada: tarifa base : 1000, Dias antelación: 7, Edad: 35; Salida: 500
+		-edad > 65 && edad <=110	Entrada: tarifa base : 1000, Dias antelación: 7, Edad:90 ; Salida: 920
+		-edad > 110			Entrada: tarifa base : 1000, Dias antelación: 6, Edad: 300; Salida: Valor Invalido
+	
+	-Tarifa base:
+
+		-tarifaBase < 0			Entrada: tarifa base : -3000, Dias antelación: 6, Edad: 25; Salida: Valor Invalido
+		-tarifaBase >=0			Entrada: tarifa base : 500, Dias antelación: 6, Edad: 25; Salida: 500
+	
+	-Dias antelación:
+
+		-dias < 0			Entrada: tarifa base : 800, Dias antelación: -15, Edad: 30; Salida: Valor Invalido
+		-dias > 0 && dias < 20		Entrada: tarifa base : 800, Dias antelación: 8, Edad: 30; Salida: 800
+		-dias >= 20 <= 9999		Entrada: tarifa base : 800, Dias antelación: 29, Edad: 30; Salida: 680
+		-dias > 9999			Entrada: tarifa base : 800, Dias antelación: 10000, Edad: 30; Salida: Valor Invalido
+
+4. A partir de las clases de equivalencia identificadas en el punto 2, identifique las condiciones límite o
+de frontera de las mismas.
+	
+	-Edad:
+		-1,0,1,17,18,19,64,65,66,109,110,111.
+	
+	-Tarifa base:
+		-1,0.
+	
+	-Dias antelación:
+		-1,0,1,19,20,21,9999,10000.
+
+5. Para cada una de las condiciones de frontera anteriores, defina casos de prueba específicos.
+
+	-Edad:
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: -1; Salida: Valor Invalido
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 0; Salida: 475
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 1; Salida: 475
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 17; Salida: 475
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 18; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 19; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 64; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 65; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 66; Salida: 460
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 109; Salida: 460
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 110; Salida: 460
+		Entrada: tarifa base : 500, Dias antelación: 10, Edad: 111; Salida: Valor Invalido
+	
+	-Tarifa base:
+		
+		Entrada: tarifa base : -1, Dias antelación: 10, Edad: 25; Salida: Valor Invalido
+		Entrada: tarifa base : 0, Dias antelación:  10, Edad: 25; Salida: 0
+
+	-Dias antelación:
+
+		Entrada: tarifa base : 500, Dias antelación: -1, Edad: 25; Salida: Valor Invalido
+		Entrada: tarifa base : 500, Dias antelación: 0, Edad: 25; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 1, Edad: 25; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 19, Edad: 25; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 20, Edad: 25; Salida: 500
+		Entrada: tarifa base : 500, Dias antelación: 21, Edad: 25; Salida: 425
+		Entrada: tarifa base : 500, Dias antelación: 9999, Edad: 25; Salida: 425
+		Entrada: tarifa base : 500, Dias antelación: 10000, Edad: 25; Salida: Valor Invalido
