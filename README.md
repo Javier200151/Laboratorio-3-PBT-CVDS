@@ -8,7 +8,7 @@ de este ejercicio se incluyen pruebas JUnit
 ## Clases de equivalencia
 
 1. Dead:Se debe validar que este parametro sea false,
-,si el valor de este parametro es true la persona no podra hacer la inscripción porque su estado es fallecido
+si el valor de este parametro es true la persona no podra hacer la inscripción porque su estado es fallecido
 
 2. UnderAge:Se debe validar si la persona es un menor de edad,\
 si este es menor de edad no podra ser registrado
