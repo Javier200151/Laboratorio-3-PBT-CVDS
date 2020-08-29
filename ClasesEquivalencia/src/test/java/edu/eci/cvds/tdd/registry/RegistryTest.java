@@ -7,7 +7,10 @@ package edu.eci.cvds.tdd.registry;
 
 import org.junit.Assert;
 import org.junit.Test;
-
+/**
+ * @author javier.lopez-p
+ * @author andres.davila-g
+ */
 public class RegistryTest {
 
     private Registry registry = new Registry();
